@@ -6,8 +6,11 @@ import '../styles/Header.css';
 
 const Header = ({ search, setSearch }) => {
     const { cart } = useCart();
-    const totalItems = cart.length;
 
+    const totalItems = () => {
+        return cart.reduce((total, libro) => total + libro.cantidad, 0);
+    };
+    
     return (
         <header className="header">
             <div className="header__left">
@@ -19,7 +22,7 @@ const Header = ({ search, setSearch }) => {
             <div className="header__right">
                 <div className="header__cart">
                     <span className="material-icons">shopping_cart</span>
-                    {totalItems > 0 && <span className="header__cart-count">{totalItems}</span>}
+                    {totalItems() > 0 && <span className="header__cart-count">{totalItems()}</span>}
                 </div>
             </div>
         </header>

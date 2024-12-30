@@ -11,7 +11,7 @@ const CheckoutPage = () => {
     const [showNotification, setShowNotification] = useState(false);
 
     const calculateTotal = () => {
-        return cart.reduce((total, libro) => total + libro.precio * libro.cantidad, 0).toFixed(2);
+        return cart.reduce((total, libro) => total + (libro.precio * libro.cantidad), 0).toFixed(2);
     };
 
     const handleCheckout = () => {

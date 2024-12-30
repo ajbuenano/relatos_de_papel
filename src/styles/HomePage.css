@@ -1,0 +1,20 @@
+.home-page__book-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.home-page__book-cards ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.home-page__book-cards li {
+    flex: 1 0 200px;
+    display: flex;
+}
+

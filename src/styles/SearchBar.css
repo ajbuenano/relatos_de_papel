@@ -1,0 +1,25 @@
+.search-bar__input {
+    width: 60%;
+    padding: 0.5rem 1rem;        
+    font-size: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    background-color: #ffffff;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.search-bar__input:hover {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+}
+
+.search-bar__input:focus {
+    border-color: #66afe9;
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+}
+
+.search-bar__input::placeholder {
+    color: #6c757d;
+    font-style: italic;
+}

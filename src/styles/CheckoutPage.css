@@ -1,0 +1,98 @@
+.checkout-page {
+    font-family: Arial, sans-serif;
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+.checkout-page__header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.checkout-page__title {
+    font-size: 2rem;
+    color: #333;
+}
+
+.checkout-page__items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.checkout-page__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    background-color: white;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+.checkout-page__item-image {
+    width: 80px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.checkout-page__item-details {
+    flex-grow: 1;
+    padding-left: 1rem;
+}
+
+.checkout-page__item-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.checkout-page__item-author {
+    font-size: 1rem;
+    color: #555;
+}
+
+.checkout-page__item-quantity,
+.checkout-page__item-price {
+    font-size: 1rem;
+    color: #777;
+}
+
+.checkout-page__total {
+    text-align: right;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.checkout-page__total-label {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+.checkout-page__total-amount {
+    color: #e60000;
+}
+
+.checkout-page__footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.checkout-page__checkout-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.checkout-page__checkout-button:hover {
+    background-color: #45a049;
+}

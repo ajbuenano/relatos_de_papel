@@ -1,0 +1,87 @@
+[
+    {
+      "id": 1,
+      "titulo": "El Principito",
+      "imagen": "/img-libros/el_principito.png",
+      "descripcion": "Un cuento filosófico que narra las aventuras de un pequeño príncipe en distintos planetas.",
+      "anio": 1943,
+      "isbn": "978-0156012195",
+      "autor": "Antoine de Saint-Exupéry",
+      "categoria": "Literatura",
+      "precio": 10.99,
+      "puntaje":5
+    },
+    {
+      "id": 2,
+      "titulo": "El Programador Pragmatico",
+      "imagen": "/img-libros/el_programador_pragmatico.png",
+      "descripcion": "Guía para desarrollar software de alta calidad mediante buenas prácticas y principios de programación.",
+      "anio": 1999,
+      "isbn": "978-0201616224",
+      "autor": "David Thomas, Andy Hunt",
+      "categoria": "Programación",
+      "precio": 29.99,
+      "puntaje":4
+    },
+    {
+      "id": 3,
+      "titulo": "El Limpiador de Código",
+      "imagen": "/img-libros/el_limpiador_de_codigo.png",
+      "descripcion": "Métodos y estrategias para mantener el código limpio, legible y eficiente en un entorno de desarrollo.",
+      "anio": 2014,
+      "isbn": "978-0321637585",
+      "autor": "Robert C. Martin",
+      "categoria": "Programación",
+      "precio": 24.99,
+      "puntaje":5
+    },
+    {
+      "id": 4,
+      "titulo": "Código Limpio",
+      "imagen": "/img-libros/codigo_limpio.png",
+      "descripcion": "Un enfoque profundo sobre la importancia de escribir código limpio para mejorar la calidad del software.",
+      "anio": 2008,
+      "isbn": "978-0132350884",
+      "autor": "Robert C. Martin",
+      "categoria": "Programación",
+      "precio": 32.99,
+      "puntaje":4
+    },
+    {
+      "id": 5,
+      "titulo": "La Artesanía del Código Limpio",
+      "imagen": "/img-libros/la_artesania_del_codigo_limpio.png",
+      "descripcion": "Un análisis de los principios que rigen la creación de código limpio y cómo implementarlos en proyectos reales.",
+      "anio": 2015,
+      "isbn": "978-0134722754",
+      "autor": "Uncle Bob",
+      "categoria": "Programación",
+      "precio": 28.99,
+      "puntaje":5
+    },
+    {
+      "id": 6,
+      "titulo": "Arquitectura Limpia",
+      "imagen": "/img-libros/arquitectura_limpia.png",
+      "descripcion": "Principios fundamentales para crear sistemas de software sostenibles y fáciles de mantener.",
+      "anio": 2017,
+      "isbn": "978-0134494166",
+      "autor": "Robert C. Martin",
+      "categoria": "Programación",
+      "precio": 35.99,
+      "puntaje":3
+    },
+    {
+      "id": 7,
+      "titulo": "Llámame Cuando No Te Encuentres",
+      "imagen": "/img-libros/llamame_cuando_no_te_encuentres.png",
+      "descripcion": "Una novela que explora los temas de la soledad y la conexión en un mundo moderno.",
+      "anio": 2018,
+      "isbn": "978-8499926145",
+      "autor": "Olga Tokarczuk",
+      "categoria": "Literatura",
+      "precio": 14.99,
+      "puntaje":4
+    }
+  ]
+  

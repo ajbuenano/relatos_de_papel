@@ -1,0 +1,133 @@
+.cart {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: #fff;
+    width: 300px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.cart--closed {
+    transform: translateY(10%);
+}
+
+.cart--open {
+    transform: translateY(0);
+}
+
+.cart__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+.cart__title {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.cart__toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.cart__content {
+    padding: 1rem;
+}
+
+.cart__empty {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.cart__items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cart__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.cart__item-image {
+    width: 50px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.cart__item-details {
+    flex-grow: 1;
+    padding-left: 1rem;
+}
+
+.cart__item-title {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.cart__item-author {
+    font-size: 1rem;
+    color: #666;
+}
+
+.cart__item-quantity {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cart__quantity-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.cart__quantity {
+    font-size: 1.2rem;
+}
+
+.cart__remove {
+    background-color: #ff4c4c;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cart__footer {
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+}
+
+.cart__checkout {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}

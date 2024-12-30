@@ -1,0 +1,14 @@
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.rating__star {
+    font-size: 1.5rem;
+    color: #ccc; /* Color de las estrellas vacías */
+    margin-right: 0.2rem;
+}
+
+.rating__star--filled {
+    color: #ffc107; /* Color de las estrellas llenas */
+}

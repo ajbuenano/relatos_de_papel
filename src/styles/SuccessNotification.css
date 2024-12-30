@@ -1,0 +1,43 @@
+.success-notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    z-index: 1000;
+    max-width: 350px;
+    width: 100%;
+}
+
+.success-notification__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.success-notification__message {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.success-notification__close {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.success-notification__close:hover {
+    color: #f1f1f1;
+}

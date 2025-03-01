@@ -9,8 +9,23 @@
 
 .header__left {
     flex: 1;
+    display: flex;
+    align-items: center;  /* Alinear verticalmente */
+    gap: 10px;  /* Espacio entre la imagen y el texto */
 }
 
+.header__left-image {
+    width: 40px;  /* Tamaño de la imagen */
+    height: 40px;
+    object-fit: contain; /* Mantiene la proporción sin cortar */
+}
+
+.header__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
 .header__search {
     width: 100%;
     padding: 0.5rem;

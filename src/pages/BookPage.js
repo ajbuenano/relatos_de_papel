@@ -21,21 +21,40 @@ const BookPage = () => {
     return (
         <div>
             <Header search={null} setSearch={null} />
+            
             <div className="book-page">
                 <div className="book-page__content">
-                    <img src={libro.imagen} alt={libro.titulo} className="book-page__image" />
-                    <h3 className="book-page__title">{libro.titulo}</h3>
-                    <p className="book-page__author"><strong>Autor:</strong> {libro.autor}</p>
-                    <p className="book-page__year"><strong>Año:</strong> {libro.anio}</p>
-                    <p className="book-page__category"><strong>Categoría:</strong> {libro.categoria}</p>
-                    <p className="book-page__price"><strong>Precio: $</strong> {libro.precio}</p>
-                    <p className="book-page__description">{libro.descripcion}</p>
-                    <Rating rating={libro.puntaje} />
-                    <div className="book-page__actions">
-                        <button className="book-page__button" onClick={() => addToCart(libro)}>Añadir al carrito</button>
-                        <button className="book-page__button book-page__back-button" onClick={() => navigate('/home')}>Volver</button>
+                    <div className="book-page__image-container">
+                        {libro.stock === 0 && <span className="book-page__sold-out">Agotado</span>}
+                        <img src={libro.image} alt={libro.title} className="book-page__image" />
+                    </div>
+                    <div className="book-page__info">
+                        <h3 className="book-page__title">{libro.title}</h3>
+                        <p className="book-page__author"><strong>Autor:</strong> {libro.author}</p>
+                        <p className="book-page__year"><strong>Año:</strong> {libro.year}</p>
+                        <p className="book-page__category"><strong>Categoría:</strong> {libro.category}</p>
+                        <p className="book-page__price"><strong>Precio: $</strong> {libro.price}</p>
+                        <p className="book-page__description">{libro.description}</p>
+                        <Rating rating={libro.score} />
+
+                        <div className="book-page__actions">
+                            <button 
+                                className="book-page__button" 
+                                onClick={() => addToCart(libro)}
+                                disabled={libro.stock === 0} 
+                            >
+                                Añadir al carrito
+                            </button>
+                            <button 
+                                className="book-page__button book-page__back-button" 
+                                onClick={() => navigate('/home')}
+                            >
+                                Volver
+                            </button>
+                        </div>
                     </div>
                 </div>
+                
                 <Cart />
             </div>
         </div>

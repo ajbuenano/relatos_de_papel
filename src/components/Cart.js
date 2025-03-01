@@ -37,10 +37,10 @@ const Cart = () => {
                         <ul className="cart__items">
                             {cart.map((item) => (
                                 <li key={item.id} className="cart__item">
-                                    <img src={item.imagen} alt={item.titulo} className="cart__item-image" />
+                                    <img src={item.image} alt={item.title} className="cart__item-image" />
                                     <div className="cart__item-details">
-                                        <h3 className="cart__item-title">{item.titulo}</h3>
-                                        <p className="cart__item-author">{item.autor}</p>
+                                        <h3 className="cart__item-title">{item.title}</h3>
+                                        <p className="cart__item-author">{item.author}</p>
                                         <div className="cart__item-quantity">
                                             <button
                                                 className="cart__quantity-button"

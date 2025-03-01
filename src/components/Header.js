@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { useCart } from '../context/CartContext';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import SearchBar from './SearchBar'; 
 import '../styles/Header.css';
 
 const Header = ({ search, setSearch }) => {
     const { cart } = useCart();
+    const navigate = useNavigate();
 
     const totalItems = () => {
         return cart.reduce((total, libro) => total + libro.cantidad, 0);
@@ -13,7 +14,8 @@ const Header = ({ search, setSearch }) => {
     
     return (
         <header className="header">
-            <div className="header__left">
+            <div className="header__left"  onClick={() => navigate('/home')}>
+                <img src="/images/libro-abierto.png" alt="" className="header__left-image" />
                 <h1 className="header__title">Relatos de papel</h1>
             </div>
             <div className="header__center">

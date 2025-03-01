@@ -1,3 +1,8 @@
+.home {
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+
 .home-page__book-cards {
     display: flex;
     flex-wrap: wrap;
@@ -18,3 +23,82 @@
     display: flex;
 }
 
+.home-page {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .home-page__filters {
+    width: 250px;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-right: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .home-page__filters h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid #555;
+  }
+  
+  .category-filters {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Estilo de cada categoría */
+  .category-filters div {
+    margin-bottom: 15px;
+  }
+  
+  /* Estilo de los radio buttons */
+  .category-filters label {
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    color: #555;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Estilo de los radio buttons cuando se seleccionan */
+  .category-filters input[type="radio"]:checked + span {
+    color: #007bff; /* Color azul cuando se selecciona */
+    font-weight: bold;
+  }
+  
+  /* Cambiar el color al pasar el mouse sobre las opciones */
+  .category-filters label:hover {
+    color: #007bff;
+    transform: scale(1.05); /* Efecto de aumento al pasar el ratón */
+  }
+  
+  /* Estilo de la lista de libros (libros se despliegan al lado derecho del panel de categorías) */
+  .home-page__book-cards {
+    flex-grow: 1; /* Toma el espacio restante */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* Ajuste de márgenes en la tarjeta de libros */
+  .home-page__book-cards ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Opcional: Estilo para el cuerpo de la página mientras se está cargando */
+  .home-page__loading {
+    text-align: center;
+    font-size: 1.5em;
+    color: #007bff;
+    padding-top: 50px;
+  }
+  

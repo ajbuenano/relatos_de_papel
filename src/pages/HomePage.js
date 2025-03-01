@@ -13,9 +13,9 @@ const HomePage = () => {
 
     const categories = [
         'Programación',
+        'Literatura',
         'Ficción',
         'Ciencia',
-        'Historia',
         'Arte',
         'Tecnología'
     ];

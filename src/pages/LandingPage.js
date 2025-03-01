@@ -22,7 +22,7 @@ const LandingPage = () => {
             </div>
             <CategoryList />
             
-            <p>Desarrollado por Adriana Buenaño</p>
+            <p>Desarrollado por Adriana Buenaño, Patricia Túquerrez & Christian Guerra</p>
         </div>
     );
 };
